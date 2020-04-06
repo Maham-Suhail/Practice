@@ -2,14 +2,14 @@ package com.company;
 
 import java.util.Scanner;
 
-//solution of question 7
+//solution of question
 public class Area {
 
     private float length;
     private float breadth;
 
-    //parameterized consttructor
-    Area (float length,float breadth)
+    //takes the length and breadth of rectangle
+    public void setDim(float length,float breadth)
     {
         this.length = length;
         this.breadth = breadth;
@@ -22,17 +22,17 @@ public class Area {
     }
 
     public static void main(String[] args) {
-        Area area;
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the Length of rectangle: ");
-        float length = sc.nextFloat();
+	Area area = new Area();
+	Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the Length of rectangle: ");
+	float length = sc.nextFloat();
 
-        System.out.println("Enter the breadth of rectangle: ");
-        float breadth = sc.nextFloat();
-        //passing values of length and breadth to constructor
-        area = new Area(length,breadth);
+	System.out.println("Enter the breadth of rectangle: ");
+	float breadth = sc.nextFloat();
+	//set the values of length and breadth
+	area.setDim(length,breadth);
 
-        System.out.println("Area of Rectangle is: "+area.getArea());
+	System.out.println("Area of Rectangle is: "+area.getArea());
 
     }
 }

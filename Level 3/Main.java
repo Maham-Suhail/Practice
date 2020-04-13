@@ -16,10 +16,10 @@ public class Main  {
         doctor.createTable();
         patient_history.createTable();
         medical_test.createTable();
-        //patient.Input();
-        //doctor.Input();
-        //patient_history.Input();
-        //medical_test.Input();
+        patient.Input();
+        doctor.Input();
+        patient_history.Input();
+        medical_test.Input();
 
         patient.display();
 
